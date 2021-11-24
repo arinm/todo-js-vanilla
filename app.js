@@ -1,7 +1,7 @@
 const todoList = { 
     
     init: function() {
-        // this.input = document.getElementById("input");
+   
         this.addTodoButton = document.querySelector("#add-todo-button");
         this.filterOptions = document.querySelector(".filter-todos");
         this.todoListUl = document.querySelector("#todo-list");
