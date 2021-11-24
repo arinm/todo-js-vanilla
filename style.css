@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body {
+    background-color: rgb(245, 249, 252);
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1em;
+}
+
+button {
+    padding: 12px;
+}
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+form button {
+    color: red;
+    background: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+form button:hover {
+    background: tomato;
+    color: white;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    color: tomato;
+    width: 7rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: tomato;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+}
